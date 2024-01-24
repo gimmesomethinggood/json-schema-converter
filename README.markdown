@@ -4,6 +4,17 @@ json-schema-converter
 Convert from [jsonschema](http://json-schema.org/) to [avro](http://avro.apache.org)
 schema, and vice versa.
 
+*Update*
+Needed to add the following dependency to the pom.xml file to get this to work:
+
+```xml
+<dependency>
+    <groupId>javax.xml.bind</groupId>
+    <artifactId>jaxb-api</artifactId>
+    <version>2.3.1</version>
+</dependency>
+```
+
 Build
 -----
     $ mvn package
